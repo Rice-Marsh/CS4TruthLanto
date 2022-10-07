@@ -23,10 +23,14 @@ public class EX03 {
         Song song1 = new Song("Peanut Butter", "Jelly Sauce", 2021);
         Song song2 = new Song("Honey Battah", "Food Comp", 2013);
         
+        song1.Play();
+        
         Singer singer1 = new Singer("Delta V", song1);
-        
+        Singer singer2 = new Singer ("Gumball", song2);
+       
         singer1.perfForAudi(12);
-        
+        singer1.perfForAudi(singer2, 5);
+        singer1.changeFavSong(song2);
     }
     
 }

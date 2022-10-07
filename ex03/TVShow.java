@@ -11,9 +11,21 @@ package ex03;
  * @author TRUTH
  */
 public class TVShow {
-    String showtitle;
-    int numEps;
-    int relYear;
+    private String showtitle;
+    private int numEps;
+    private int relYear;
+    
+    public String getShowTitle(){
+        return showtitle;
+    }
+    
+    public int getNumEps(){
+        return numEps;
+    }
+    
+    public int getRelYear(){
+        return relYear;
+    }
     
     public TVShow(String a, int b, int c){
         showtitle = a;
